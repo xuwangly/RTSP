@@ -2,7 +2,7 @@
 #include "RTSPCommonEnv.h"
 #include <stdio.h>
 
-THREAD_FUNC DoEventThread(void* lpParam)
+static THREAD_FUNC DoEventThread(void* lpParam)
 {
 	TaskScheduler *scheduler = (TaskScheduler *)lpParam;
 	scheduler->doEventLoop();

@@ -13,7 +13,7 @@ public:
 	int sock() { return fSock; }
 	unsigned short port() { return fPort; }
 	struct sockaddr_in& clientAddress() { return fClientAddr; }
-	bool isOpened() { return fSock != -1; }
+	bool isOpened() { return fIsOpen; }
 
 	int setupStreamSock(short port, int makeNonBlocking);
 	int setupDatagramSock(short port, int makeNonBlocking);
@@ -54,6 +54,7 @@ public:
 protected:
 	int				fSock;
 	unsigned short	fPort;
+	bool			fIsOpen;
 
 	struct sockaddr_in	fClientAddr;
 

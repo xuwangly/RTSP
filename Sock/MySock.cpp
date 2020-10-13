@@ -7,6 +7,7 @@ MySock::MySock()
 {
 	fSock = -1;
 	fPort = 0;
+	fIsOpen = false;
 	memset(&fClientAddr, 0, sizeof(struct sockaddr_in));
 	fIsSSM = false;
 	fGroupAddress = fSourceFilterAddr = 0;
@@ -27,9 +28,9 @@ void MySock::closeSock()
 		}
 	}
 
-	if (fSock >= 0) {
+	if (fIsOpen) {
 		closeSocket(fSock);
-		fSock = -1;
+		fIsOpen = false;
 		memset(&fClientAddr, 0, sizeof(struct sockaddr_in));
 		fGroupAddress = fSourceFilterAddr = 0;
 	}
@@ -46,6 +47,7 @@ int MySock::setupStreamSock(short port, int makeNonBlocking)
 	if (sock > 0) {
 		fSock = sock;
 		fPort = port;
+		fIsOpen = true;
 	}
 
 	return sock;
@@ -57,6 +59,7 @@ int MySock::setupDatagramSock(short port, int makeNonBlocking)
 	if (sock > 0) {
 		fSock = sock;
 		fPort = port;
+		fIsOpen = true;
 	}
 
 	return sock;
@@ -68,6 +71,7 @@ int MySock::setupServerSock(short port, int makeNonBlocking)
 	if (sock > 0) {
 		fSock = sock;
 		fPort = port;
+		fIsOpen = true;
 	}
 
 	return sock;
@@ -79,6 +83,7 @@ int MySock::setupClientSock(int serverSock, int makeNonBlocking)
 	if (sock > 0) {
 		fSock = sock;
 		fPort = ntohs(fClientAddr.sin_port);
+		fIsOpen = true;
 	}
 
 	return sock;

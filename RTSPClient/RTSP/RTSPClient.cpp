@@ -1484,6 +1484,8 @@ int RTSPClient::openURL(const char *url, int streamType, int timeout, bool rtpOn
 		addr.s_addr = address;
 		const char *ip_address = inet_ntoa(addr);
 
+		if (ip_address == NULL) break;
+
 		parsedURL = new char[strlen(ip_address)+strlen(urlSuffix)+20];
 		sprintf((char *)parsedURL, "rtsp://%s:%hu%s", ip_address, port, urlSuffix);
 
