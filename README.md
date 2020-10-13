@@ -1,5 +1,5 @@
 # RTSP
-c++ RTSP Client/Server - win32/linux/android
+c++ RTSP Client/Server - windows/linux/android
 
 this project is RTSP client/server library for windows/linux/android.
 
