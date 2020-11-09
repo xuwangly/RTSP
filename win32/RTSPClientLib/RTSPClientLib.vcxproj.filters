@@ -196,9 +196,6 @@
     <ClInclude Include="..\..\OS_Common\Mutex.h">
       <Filter>OS_Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\OS_Common\NetCommon.h">
-      <Filter>OS_Common</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\OS_Common\Thread.h">
       <Filter>OS_Common</Filter>
     </ClInclude>
@@ -213,6 +210,9 @@
     </ClInclude>
     <ClInclude Include="..\..\RTSPClient\RTP\H265RTPSource.h">
       <Filter>RTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sock\NetCommon.h">
+      <Filter>Sock</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

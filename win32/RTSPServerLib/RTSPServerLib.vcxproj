@@ -145,6 +145,7 @@
     <ClInclude Include="..\..\RTSPServer\Common\NetAddress.h" />
     <ClInclude Include="..\..\Common\RTSPCommon.h" />
     <ClInclude Include="..\..\Common\RTSPCommonEnv.h" />
+    <ClInclude Include="..\..\Sock\NetCommon.h" />
     <ClInclude Include="..\..\Util\our_md5.h" />
     <ClInclude Include="..\..\Util\util.h" />
     <ClInclude Include="..\..\Sock\MySock.h" />
@@ -155,7 +156,6 @@
     <ClInclude Include="..\..\RTSPServer\RTSP\OnDemandServerMediaSession.h" />
     <ClInclude Include="..\..\RTSPServer\RTSP\RTSPServer.h" />
     <ClInclude Include="..\..\RTSPServer\RTSP\ServerMediaSession.h" />
-    <ClInclude Include="..\..\OS_Common\NetCommon.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\RTSPServer\Common\NetAddress.cpp" />

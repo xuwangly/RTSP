@@ -199,13 +199,13 @@
     <ClInclude Include="..\..\RTSPClient\RTSP\MediaSession.h" />
     <ClInclude Include="..\..\RTSPClient\RTSP\RTSPClient.h" />
     <ClInclude Include="..\..\Sock\MySock.h" />
+    <ClInclude Include="..\..\Sock\NetCommon.h" />
     <ClInclude Include="..\..\Sock\SockCommon.h" />
     <ClInclude Include="..\..\Sock\TaskScheduler.h" />
     <ClInclude Include="..\..\Util\our_md5.h" />
     <ClInclude Include="..\..\Util\util.h" />
     <ClInclude Include="..\..\OS_Common\Event.h" />
     <ClInclude Include="..\..\OS_Common\Mutex.h" />
-    <ClInclude Include="..\..\OS_Common\NetCommon.h" />
     <ClInclude Include="..\..\OS_Common\Thread.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

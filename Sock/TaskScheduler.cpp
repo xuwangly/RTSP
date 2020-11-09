@@ -25,8 +25,6 @@ TaskScheduler::~TaskScheduler()
 
 	delete fReadHandlers;
 
-	THREAD_DESTROY(&fThread);
-
 	MUTEX_DESTROY(&fMutex);
 }
 

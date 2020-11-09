@@ -94,14 +94,14 @@ int setupStreamSock(short port, int makeNonBlocking)
 		socketErr("[%s] unable to create stream socket: ", __FUNCTION__);
 		return newSocket;
 	}
-#if 0
+
 	if (setsockopt(newSocket, SOL_SOCKET, SO_REUSEADDR,
 		(const char*)&reuseFlag, sizeof reuseFlag) != 0) {
 			socketErr("[%s] setsockopt(SO_REUSEADDR) error: ", __FUNCTION__);
 			closeSocket(newSocket);
 			return -1;
 	}
-#endif
+
 	struct sockaddr_in c_addr;
 	memset(&c_addr, 0, sizeof(c_addr));
 	c_addr.sin_addr.s_addr = INADDR_ANY;
