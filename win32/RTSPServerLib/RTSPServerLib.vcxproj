@@ -141,6 +141,10 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\OS_Common\Event.h" />
+    <ClInclude Include="..\..\OS_Common\Mutex.h" />
+    <ClInclude Include="..\..\OS_Common\MySemaphore.h" />
+    <ClInclude Include="..\..\OS_Common\Thread.h" />
     <ClInclude Include="..\..\RTSPServer\Common\MyList.h" />
     <ClInclude Include="..\..\RTSPServer\Common\NetAddress.h" />
     <ClInclude Include="..\..\Common\RTSPCommon.h" />
@@ -158,6 +162,10 @@
     <ClInclude Include="..\..\RTSPServer\RTSP\ServerMediaSession.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\OS_Common\Event.cpp" />
+    <ClCompile Include="..\..\OS_Common\Mutex.cpp" />
+    <ClCompile Include="..\..\OS_Common\MySemaphore.cpp" />
+    <ClCompile Include="..\..\OS_Common\Thread.cpp" />
     <ClCompile Include="..\..\RTSPServer\Common\NetAddress.cpp" />
     <ClCompile Include="..\..\Common\RTSPCommon.cpp" />
     <ClCompile Include="..\..\Common\RTSPCommonEnv.cpp" />

@@ -63,6 +63,18 @@
     <ClInclude Include="..\..\Sock\NetCommon.h">
       <Filter>Sock</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\OS_Common\Event.h">
+      <Filter>OS_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\OS_Common\Mutex.h">
+      <Filter>OS_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\OS_Common\MySemaphore.h">
+      <Filter>OS_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\OS_Common\Thread.h">
+      <Filter>OS_Common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\RTSPServer\Common\NetAddress.cpp">
@@ -109,6 +121,18 @@
     </ClCompile>
     <ClCompile Include="..\..\RTSPServer\RTSP\ServerMediaSession.cpp">
       <Filter>RTSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\OS_Common\Event.cpp">
+      <Filter>OS_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\OS_Common\Mutex.cpp">
+      <Filter>OS_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\OS_Common\MySemaphore.cpp">
+      <Filter>OS_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\OS_Common\Thread.cpp">
+      <Filter>OS_Common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
