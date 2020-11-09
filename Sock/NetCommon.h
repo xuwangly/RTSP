@@ -11,12 +11,6 @@
 #define EINPROGRESS WSAEWOULDBLOCK
 #define EINTR		WSAEINTR
 
-#define _strcasecmp	_strnicmp
-
-#if _MSC_VER <= 1700
-#define snprintf	_snprintf
-#endif
-
 #else
 
 #include <sys/socket.h>

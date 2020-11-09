@@ -13,6 +13,13 @@ typedef unsigned int		u_int32_t;
 typedef unsigned __int64	uint64_t;
 typedef unsigned __int64	u_int64_t;
 typedef __int64				int64_t;
+
+#define _strcasecmp	_strnicmp
+
+#if _MSC_VER <= 1700
+#define snprintf	_snprintf
+#endif
+
 #else
 #include <inttypes.h>
 #endif
