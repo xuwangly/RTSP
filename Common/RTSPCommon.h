@@ -22,6 +22,7 @@ typedef __int64				int64_t;
 
 #else
 #include <inttypes.h>
+#define _strcasecmp	strncasecmp
 #endif
 
 #pragma pack(push, 1)

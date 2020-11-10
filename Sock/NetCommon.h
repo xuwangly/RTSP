@@ -26,7 +26,6 @@
 
 #include <ctype.h>
 #include <stdlib.h>
-#define _strcasecmp strncasecmp
 #endif
 
 #endif
